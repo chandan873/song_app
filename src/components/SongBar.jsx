@@ -32,12 +32,12 @@ const SongBar = ({ song, i, artistId, isPlaying, activeSong, handlePauseClick, h
     {!artistId
       ? (
         <PlayPause
-          isPlaying={isPlaying}
-          activeSong={activeSong}
-          song={song}
-          handlePause={handlePauseClick}
-          handlePlay={() => handlePlayClick(song, i)}
-        />
+      isPlaying={isPlaying}
+      activeSong={activeSong}
+      song={song}
+      handlePauseClick={handlePauseClick}
+      handlePlayClick={() => handlePlayClick(song, i)}
+    />
       )
       : null}
   </div>
